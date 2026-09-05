@@ -1,0 +1,22 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, sans-serif; }
+body { background-color: #121414; color: #e0e0e0; padding: 20px; }
+
+.container { display: flex; gap: 30px; max-width: 1200px; margin: 0 auto; }
+
+/* Sidebar */
+.sidebar { width: 300px; background: #1e2222; padding: 25px; border-radius: 16px; border: 1px solid #2b3030; text-align: center; }
+.avatar { width: 100%; border-radius: 12px; margin-bottom: 15px; }
+.title { color: #888; font-size: 0.9rem; margin-bottom: 15px; }
+.btn { display: block; padding: 10px; background: #22c55e; color: #000; text-decoration: none; border-radius: 8px; font-weight: bold; margin-top: 15px; }
+
+/* Main Content */
+.main-content { flex: 1; background: #1e2222; padding: 30px; border-radius: 16px; border: 1px solid #2b3030; }
+
+/* Tabs */
+.nav-tabs { display: flex; gap: 15px; border-bottom: 1px solid #2b3030; padding-bottom: 15px; margin-bottom: 25px; }
+.tab-btn { background: none; border: none; color: #888; font-size: 1rem; cursor: pointer; padding: 5px 10px; }
+.tab-btn.active { color: #22c55e; border-bottom: 2px solid #22c55e; font-weight: bold; }
+
+/* Section visibility */
+.tab-content { display: none; }
+.tab-content.active { display: block; }

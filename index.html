@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Left Sidebar -->
+    <aside class="sidebar">
+      <img src="profile.jpg" alt="Profile" class="avatar">
+      <h2>Your Name</h2>
+      <p class="title">Software Engineer</p>
+      <div class="socials">
+        <a href="https://github.com">GitHub</a>
+        <a href="https://linkedin.com">LinkedIn</a>
+      </div>
+      <a href="#" class="btn">Download CV</a>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Navigation Tabs -->
+      <nav class="nav-tabs">
+        <button class="tab-btn active" onclick="openTab(event, 'about')">About</button>
+        <button class="tab-btn" onclick="openTab(event, 'works')">Works</button>
+        <button class="tab-btn" onclick="openTab(event, 'skills')">Skills</button>
+        <button class="tab-btn" onclick="openTab(event, 'resume')">Resume</button>
+        <button class="tab-btn" onclick="openTab(event, 'contact')">Contact</button>
+      </nav>
+
+      <!-- Sections -->
+      <section id="about" class="tab-content active">
+        <h1>About Me</h1>
+        <p>Hello! I build embedded systems, hardware, and scalable web software.</p>
+      </section>
+
+      <section id="works" class="tab-content">
+        <h1>Projects</h1>
+        <p>Project details and portfolio items go here.</p>
+      </section>
+
+      <section id="skills" class="tab-content">
+        <h1>Skills</h1>
+        <ul>
+          <li>C / C++ / Embedded Firmware</li>
+          <li>Python / Microcontrollers</li>
+          <li>HTML / CSS / JavaScript</li>
+        </ul>
+      </section>
+
+      <section id="resume" class="tab-content">
+        <h1>Experience</h1>
+        <p>Your work history and background details.</p>
+      </section>
+
+      <section id="contact" class="tab-content">
+        <h1>Contact</h1>
+        <p>Email: yourname@email.com</p>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
